@@ -61,8 +61,8 @@ app.post("/send/mail", async (req, res) => {
 
   try {
     const info = await transporter.sendMail({
-      from: "alkarbathua@gmail.com",
-      to: "sunnyadityaa@gmail.com",
+      from: "dummy@gmail.com",
+      to: "anshulpandey@cmail.my.id",
       subject: "New Address Submitted",
       text: "New Address Submitted", // Text version of the email
       html: htmlToSend, // HTML version of the email
