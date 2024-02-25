@@ -29,6 +29,7 @@ const template = handlebars.compile(source);
 // Route to handle form submission
 app.post("/send/mail", async (req, res) => {
   const {
+      productName,
     fullName,
     mobileNumber,
     city,
@@ -44,6 +45,7 @@ app.post("/send/mail", async (req, res) => {
   } = req.body;
   // Construct email message
   const replacements = {
+     productName: productName,
     fullName: fullName,
     mobileNumber: mobileNumber,
     city: city,
